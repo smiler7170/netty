@@ -31,7 +31,7 @@ function submitNewAsset(){
  submitData = new FormData();
  //Get form variables and append them to the form data object
  submitData.append('FileName', $('#FileName').val());
- submitData.append('userID', $('#userID').val());
+ submitData.append('Title', $('#Title').val());
  submitData.append('Producer', $('#Producer').val());
  submitData.append('Genre', $('#Genre').val());
  submitData.append('Age', $('#Age').val());
@@ -65,7 +65,7 @@ var items = [];
 $.each( data, function( key, val ) {
 items.push( "<hr />");
 items.push("<video src='"+BLOB_ACCOUNT + val["filePath"] +"' width='400' controls autoplay muted/>  </video>" )
-items.push( "File : " + val["fileName"] + "<br />");
+items.push( "Title : " + val["Title"] + "<br />");
 items.push( "Uploaded by: " + val["Age"] + " (user id: "+val["Age"]+")<br />");
 items.push( "<hr />");
 });
