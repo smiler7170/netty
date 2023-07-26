@@ -66,7 +66,7 @@ $.each( data, function( key, val ) {
 items.push( "<hr />");
 items.push("<video src='"+BLOB_ACCOUNT + val["filePath"] +"' width='400' controls autoplay muted/>  </video>" )
 items.push( "File : " + val["fileName"] + "<br />");
-items.push( "Uploaded by: " + val["Age"] + " (user id: "+val["Genre"]+")<br />");
+items.push( "Uploaded by: " + val["Genre"] + " (user id: "+val["Genre"]+")<br />");
 items.push( "<hr />");
 });
 //Clear the assetlist div 
